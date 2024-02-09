@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <navbar/>
+      <h1>it is importing navbar</h1>
+      <Navbar/>
     </div>
   );
 }
