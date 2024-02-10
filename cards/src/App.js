@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <h1>it is importing navbar</h1>
+      
       <Navbar/>
     </div>
   );

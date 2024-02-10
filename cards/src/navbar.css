@@ -1,0 +1,10 @@
+.navbar.navbar-light.bg-light {
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+    background-color: aquamarine !important;
+}
+
+.d-flex .search {
+    margin-right: 50px !important;
+}
