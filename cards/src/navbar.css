@@ -5,6 +5,24 @@
     background-color: aquamarine !important;
 }
 
-.d-flex .search {
-    margin-right: 50px !important;
+#searchbar{
+    margin-right: 30% !important;
+    border-radius: 20px;
+}
+.container-fluid a{
+    margin-right: 25%;
+}
+#imglogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+#accountimg{
+    /* height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-right: 20px; */
+    height: 50px;
+    width: 50px;
 }

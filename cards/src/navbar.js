@@ -8,6 +8,7 @@ function Navbar() {
     <div className="divnavbar">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
+          <img src="logo.jpeg" id="imglogo" ></img>
           <a className="navbar-brand" href="#">
             Cards&stuff
           </a>
@@ -23,16 +24,16 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <form className="d-flex search">
+          <form className="d-flex search" id="searchbar">
             <input
               className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            {/* <button className="btn btn-outline-success" type="submit">
               Search
-            </button>
+            </button> */}
           </form>
 
           <div className="collapse navbar-collapse" id="navbarScroll">
@@ -73,6 +74,7 @@ function Navbar() {
             </ul>
           </div>
         </div>
+        <img src="accountimg.jpg" id="imglogo" ></img>
       </nav>
     </div>
   );

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './navbar';
+import StaticDiv from './staticdiv';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      
+      <StaticDiv/>
       <Navbar/>
     </div>
   );
