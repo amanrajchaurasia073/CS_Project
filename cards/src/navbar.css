@@ -8,6 +8,10 @@
 #searchbar{
     margin-right: 30% !important;
     border-radius: 20px;   
+    width: 100% !important;
+}
+#navbarSupportedContent{
+    margin-left: 20%;
 }
 .form-control{
     margin-right: 100px !important;
