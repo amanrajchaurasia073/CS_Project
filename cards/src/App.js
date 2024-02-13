@@ -1,27 +1,50 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useState } from 'react';
 import Navbar from './navbar';
 import StaticDiv from './staticdiv';
+import Menu from './menu';
+import GridItemPopular from './griditempopular';
+import Allgrid from './allgrid';
+import Trend from './gridtrend';
 
 function App() {
+  const [isPopularClicked, setIsPopularClicked] = useState(false);
+  const [isAllClicked, setIsAllClicked] = useState(false);
+  const [isTrendClicked, setIsTrendClicked] = useState(false);
+
+  // Handle click for each button
+  const handlePopularClick = () => {
+    setIsPopularClicked(true);
+    setIsAllClicked(false);
+    setIsTrendClicked(false);
+  };
+
+  const handleAllClick = () => {
+    setIsPopularClicked(false);
+    setIsAllClicked(true);
+    setIsTrendClicked(false);
+  };
+
+  const handleTrendClick = () => {
+    setIsPopularClicked(false);
+    setIsAllClicked(false);
+    setIsTrendClicked(true);
+  };
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <StaticDiv/>
       <Navbar/>
+      <StaticDiv/>
+      <Menu 
+        handlePopularClick={handlePopularClick} 
+        handleAllClick={handleAllClick} 
+        handleTrendClick={handleTrendClick}
+      />
+      {/* Render corresponding components based on button clicks */}
+      {isPopularClicked && <GridItemPopular />}
+      {isAllClicked && <Allgrid />}
+      {isTrendClicked && <Trend />}
     </div>
   );
 }

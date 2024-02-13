@@ -1,0 +1,24 @@
+.griditems{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 20px; 
+    
+}
+.card{
+    width: 100%;
+    
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .griditems {
+    grid-template-columns: repeat(2, 1fr) !important; /* Two columns on screens up to 768px wide */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .griditems {
+    grid-template-columns: 1fr !important; /* Single column on screens up to 480px wide */
+  }
+}

@@ -1,0 +1,31 @@
+.griditems{
+    display: flex;
+    
+}
+.card{
+    margin-top: 50px ;
+    margin-right:50px;
+    margin-left: 50px;
+    border: 2px solid rgb(150, 191, 153);
+}
+.card:hover{
+    box-shadow:  15px 15px 15px 15px rgba(5, 5, 5, 0.472);
+}
+.btn{
+    border: 1px solid  rgb(251, 151, 168) !important;
+    background-color:pink !important;
+    color: black;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .griditems {
+      grid-template-columns: repeat(2, 1fr) !important; /* Two columns on screens up to 768px wide */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 480px) {
+    .griditems {
+      grid-template-columns: 1fr !important; /* Single column on screens up to 480px wide */
+    }
+  }
