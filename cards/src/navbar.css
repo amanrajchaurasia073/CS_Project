@@ -1,0 +1,40 @@
+.navbar.navbar-light.bg-light {
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+    /* background-color: aquamarine !important; */
+}
+
+#searchbar{
+    margin-right: 30% !important;
+    border-radius: 20px;   
+    width: 100% !important;
+}
+#navbarSupportedContent{
+    margin-left: 20%;
+}
+.form-control{
+    margin-right: 100px !important;
+}
+.navbar-brand{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px !important;
+}
+.container-fluid a{
+    margin-right: 25%;
+}
+#imglogo{
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+#accountimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
